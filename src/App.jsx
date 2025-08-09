@@ -25,7 +25,7 @@ import './App.css'
 
 // Importar imagens
 import chegouAppLogo from './assets/chegouapp_logo.png'
-import appInterface from './assets/mock.png'
+import appInterface from './assets/mock2.png'
 import smartLocker from './assets/smart_locker_1.png'
 import pessoaCelular from './assets/pessoa_celular_1.jpg'
 
