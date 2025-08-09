@@ -28,7 +28,6 @@ import chegouAppLogo from './assets/chegouapp_logo.png'
 import appInterface from './assets/app_interface_2.jpg'
 import smartLocker from './assets/smart_locker_1.png'
 import pessoaCelular from './assets/pessoa_celular_1.jpg'
-import porteiro from './assets/porteiro_entregas.jpg'
 
 function App() {
   const scrollToSection = (sectionId) => {
@@ -57,9 +56,8 @@ function App() {
               Contato
             </button>
           </nav>
-          <Button className="chegou-button font-semibold">
-            Solicitar Demo
-          </Button>
+          <div className="chegou-button font-semibold">
+          </div>
         </div>
       </header>
 
@@ -74,7 +72,7 @@ function App() {
                 </Badge>
                 <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                   <span className="text-white">Chegou</span>
-                  <span className="chegou-accent">App</span>
+                  <span className="chegou-accent">App!</span>
                 </h1>
                 <h2 className="text-2xl lg:text-3xl chegou-text-secondary">
                   Gestão Inteligente de Encomendas em Condomínios
@@ -126,7 +124,7 @@ function App() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Package, title: "Volume Crescente", desc: "Aumento de 161% nas entregas online em 2024" },
+              { icon: Package, title: "Volume Crescente", desc: "Aumento de 161% nas entregas online..." },
               { icon: Clock, title: "Dependência de Horários", desc: "Moradores limitados aos horários da portaria" },
               { icon: Shield, title: "Segurança Comprometida", desc: "Risco de extravios e violação de pacotes" },
               { icon: Building, title: "Sobrecarga da Portaria", desc: "Porteiros sobrecarregados com gestão manual" }
@@ -150,10 +148,10 @@ function App() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-4xl font-bold">
-                  Como o <span className="chegou-accent">ChegouApp</span> Resolve
+                  Como o Chegou<span className="chegou-accent">App!</span> Resolve
                 </h2>
                 <p className="text-xl chegou-text-secondary">
-                  Uma solução completa que conecta porteiros, moradores e gestores em um fluxo inteligente e seguro
+                  Uma solução completa que conecta portaria, moradores e gestores em um fluxo inteligente e seguro
                 </p>
               </div>
               <div className="space-y-6">
@@ -291,7 +289,7 @@ function App() {
       </section>
 
       {/* Depoimentos Section */}
-      <section className="chegou-section bg-secondary/20">
+      {/* <section className="chegou-section bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">O que Nossos Clientes Dizem</h2>
@@ -341,7 +339,7 @@ function App() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section id="contato" className="chegou-section">
@@ -370,21 +368,21 @@ function App() {
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">Entre em Contato</h3>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-3">
+                  {/* <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 chegou-accent" />
                     <span className="chegou-text-secondary">(11) 4321-1234</span>
-                  </div>
+                  </div> */}
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 chegou-accent" />
-                    <span className="chegou-text-secondary">contato@chegouapp.com.br</span>
+                    <span className="chegou-text-secondary">contato em breve</span>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  {/* <div className="flex items-center space-x-3">
                     <Globe className="w-5 h-5 chegou-accent" />
                     <span className="chegou-text-secondary">www.chegouapp.com.br</span>
-                  </div>
+                  </div> */}
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="w-5 h-5 chegou-accent" />
-                    <span className="chegou-text-secondary">(11) 98765-4321</span>
+                    <span className="chegou-text-secondary">Link para whatsapp</span>
                   </div>
                 </div>
               </div>
@@ -414,29 +412,29 @@ function App() {
               <h4 className="text-lg font-semibold">Produto</h4>
               <ul className="space-y-2 chegou-text-secondary">
                 <li><a href="#" className="hover:text-primary transition-colors">Funcionalidades</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Preços</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Demonstração</a></li>
+                {/* <li><a href="#" className="hover:text-primary transition-colors">Preços</a></li> */}
+                {/* <li><a href="#" className="hover:text-primary transition-colors">Demonstração</a></li> */}
               </ul>
             </div>
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Empresa</h4>
               <ul className="space-y-2 chegou-text-secondary">
                 <li><a href="#" className="hover:text-primary transition-colors">Sobre</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Carreiras</a></li>
+                {/* <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li> */}
+                {/* <li><a href="#" className="hover:text-primary transition-colors">Carreiras</a></li> */}
               </ul>
             </div>
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Suporte</h4>
               <ul className="space-y-2 chegou-text-secondary">
-                <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Status</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda FAQ</a></li>
+                {/* <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li> */}
+                {/* <li><a href="#" className="hover:text-primary transition-colors">Status</a></li> */}
               </ul>
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center chegou-text-secondary">
-            <p>&copy; 2024 ChegouApp. Todos os direitos reservados.</p>
+            <p>&copy; 2025 ChegouApp! Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
