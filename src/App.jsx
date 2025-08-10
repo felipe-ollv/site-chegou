@@ -62,7 +62,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="inicio" className="chegou-section pt-32 pb-20">
+      <section id="inicio" className="chegou-section pt-32 pb-20 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -114,7 +114,7 @@ function App() {
       </section>
 
       {/* Problema Section */}
-      <section className="chegou-section bg-secondary/20">
+      <section className="chegou-section bg-secondary/20 pt-32 pb-20 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Os Desafios das Entregas em Condomínios</h2>
@@ -142,7 +142,7 @@ function App() {
       </section>
 
       {/* Solução Section */}
-      <section className="chegou-section">
+      <section className="chegou-section pt-32 pb-20 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -185,7 +185,7 @@ function App() {
       </section>
 
       {/* Funcionalidades Section */}
-      <section id="funcionalidades" className="chegou-section bg-secondary/20">
+      <section id="funcionalidades" className="chegou-section bg-secondary/20 pt-32 pb-20 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Recursos que Transformam a Rotina</h2>
@@ -228,7 +228,7 @@ function App() {
       </section>
 
       {/* Benefícios Section */}
-      <section id="beneficios" className="chegou-section">
+      <section id="beneficios" className="chegou-section pt-32 pb-20 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">Benefícios para Todos</h2>
@@ -342,7 +342,7 @@ function App() {
       </section> */}
 
       {/* CTA Section */}
-      <section id="contato" className="chegou-section">
+      <section id="contato" className="chegou-section pt-32 pb-20 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -360,8 +360,8 @@ function App() {
                   <p className="chegou-text-secondary mb-6">
                     Nossa equipe irá apresentar todas as funcionalidades do ChegouApp e como ele pode ser personalizado para as necessidades específicas do seu condomínio.
                   </p>
-                  <Button className="chegou-button w-full text-lg py-6">
-                    Agendar Demonstração
+                  <Button asChild className="chegou-button w-full text-lg py-6">
+                    <a href="mailto:comercial@app-chegou.com.br?subject=Solicitação de demonstração&body=Olá, gostaria de agendar uma demonstração do ChegouApp!" className="chegou-text-secondary hover:text-primary transition-colors" > Agendar Demonstraçåo </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -374,7 +374,7 @@ function App() {
                   </div> */}
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 chegou-accent" />
-                    <span className="chegou-text-secondary">contato em breve</span>
+                    <a href="mailto:comercial@app-chegou.com.br?subject=Solicitação de demonstração&body=Olá, gostaria de agendar uma demonstração do ChegouApp!" className="chegou-text-secondary hover:text-primary transition-colors" > comercial@app-chegou.com.br </a>
                   </div>
                   {/* <div className="flex items-center space-x-3">
                     <Globe className="w-5 h-5 chegou-accent" />
@@ -382,7 +382,7 @@ function App() {
                   </div> */}
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="w-5 h-5 chegou-accent" />
-                    <span className="chegou-text-secondary">Link para whatsapp</span>
+                    <span className="chegou-text-secondary">Whatsapp Em Breve</span>
                   </div>
                 </div>
               </div>
@@ -411,7 +411,7 @@ function App() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Produto</h4>
               <ul className="space-y-2 chegou-text-secondary">
-                <li><a href="#" className="hover:text-primary transition-colors">Funcionalidades</a></li>
+                <li><a href="#funcionalidades" className="hover:text-primary transition-colors">Funcionalidades</a></li>
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Preços</a></li> */}
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Demonstração</a></li> */}
               </ul>
@@ -419,7 +419,7 @@ function App() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Empresa</h4>
               <ul className="space-y-2 chegou-text-secondary">
-                <li><a href="#" className="hover:text-primary transition-colors">Sobre</a></li>
+                <li><a href="#inicio" className="hover:text-primary transition-colors">Sobre</a></li>
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li> */}
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Carreiras</a></li> */}
               </ul>
@@ -427,7 +427,7 @@ function App() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Suporte</h4>
               <ul className="space-y-2 chegou-text-secondary">
-                <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda FAQ</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda FAQ (Em Breve)</a></li>
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li> */}
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Status</a></li> */}
               </ul>
