@@ -361,7 +361,12 @@ function App() {
                     Nossa equipe irá apresentar todas as funcionalidades do ChegouApp e como ele pode ser personalizado para as necessidades específicas do seu condomínio.
                   </p>
                   <Button asChild className="chegou-button w-full text-lg py-6">
-                    <a href="mailto:comercial@app-chegou.com.br?subject=Solicitação de demonstração&body=Olá, gostaria de agendar uma demonstração do ChegouApp!" className="chegou-text-secondary hover:text-primary transition-colors" > Agendar Demonstraçåo </a>
+                    <a href="https://wa.me/5511941076151?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20ChegouApp!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Agendar Demonstração
+                      </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -382,7 +387,13 @@ function App() {
                   </div> */}
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="w-5 h-5 chegou-accent" />
-                    <span className="chegou-text-secondary">Whatsapp Em Breve</span>
+                    {/* <span className="chegou-text-secondary">Whatsapp Em Breve</span> */}
+                      <a href="https://wa.me/5511941076151?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20ChegouApp!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Agendar Demonstração
+                      </a>
                   </div>
                 </div>
               </div>
