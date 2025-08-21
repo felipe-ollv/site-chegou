@@ -2,25 +2,31 @@ import React from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { 
-  Smartphone, 
-  Shield, 
-  Clock, 
-  Bell, 
-  QrCode, 
-  History, 
-  BarChart3, 
-  Users, 
-  CheckCircle, 
-  Phone, 
-  Mail, 
-  Globe, 
+import {
+  Smartphone,
+  Shield,
+  Clock,
+  Bell,
+  QrCode,
+  History,
+  BarChart3,
+  Users,
+  CheckCircle,
+  Phone,
+  Mail,
+  Globe,
   MessageCircle,
   Package,
   Building,
   Truck,
   Star
 } from 'lucide-react'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from '@/components/ui/accordion.jsx'
 import './App.css'
 
 // Importar imagens
@@ -82,16 +88,16 @@ function App() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="chegou-button text-lg px-8 py-6"
                   onClick={() => scrollToSection('funcionalidades')}
                 >
                   Conhecer Funcionalidades
                 </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
+                <Button
+                  size="lg"
+                  variant="outline"
                   className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   onClick={() => scrollToSection('contato')}
                 >
@@ -101,9 +107,9 @@ function App() {
             </div>
             <div className="relative">
               <div className="relative z-10">
-                <img 
-                  src={appInterface} 
-                  alt="Interface do ChegouApp" 
+                <img
+                  src={appInterface}
+                  alt="Interface do ChegouApp"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
               </div>
@@ -174,9 +180,9 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={smartLocker} 
-                alt="Processo ChegouApp" 
+              <img
+                src={smartLocker}
+                alt="Processo ChegouApp"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
             </div>
@@ -288,6 +294,49 @@ function App() {
         </div>
       </section>
 
+      <section id="faq" className="chegou-section bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Perguntas Frequentes (FAQ)</h2>
+            <p className="text-xl chegou-text-secondary max-w-3xl mx-auto">
+              Encontre respostas para as dúvidas mais comuns sobre o ChegouApp
+            </p>
+          </div>
+          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">O que é o ChegouApp?</AccordionTrigger>
+              <AccordionContent className="text-lg chegou-text-secondary">
+                O ChegouApp é um aplicativo de gestão de encomendas desenvolvido para condomínios, que otimiza o processo de recebimento, registro e entrega de pacotes, proporcionando mais segurança e praticidade para moradores e porteiros.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">Como o ChegouApp funciona para o porteiro?</AccordionTrigger>
+              <AccordionContent className="text-lg chegou-text-secondary">
+                O porteiro utiliza o aplicativo para registrar a chegada de encomendas, tirar fotos dos pacotes e do remetente, e notificar o morador instantaneamente. Na retirada, o morador confirma o recebimento digitalmente, garantindo um registro completo e seguro.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">Quais os benefícios para os moradores?</AccordionTrigger>
+              <AccordionContent className="text-lg chegou-text-secondary">
+                Moradores recebem notificações em tempo real, podem retirar suas encomendas a qualquer hora (se o condomínio tiver lockers), têm acesso a um histórico completo de recebimentos e contam com maior segurança e privacidade no processo.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">O ChegouApp é compatível com armários inteligentes (lockers)?</AccordionTrigger>
+              <AccordionContent className="text-lg chegou-text-secondary">
+                Sim, estamos desenvolvendo a integração com armários inteligentes (lockers) para automatizar completamente o processo de entrega e retirada. Esta funcionalidade está prevista para ser implementada no curto prazo.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">Como meu condomínio pode adquirir o ChegouApp?</AccordionTrigger>
+              <AccordionContent className="text-lg chegou-text-secondary">
+                Para adquirir o ChegouApp, basta entrar em contato conosco através do formulário de demonstração em nosso site, e nossa equipe apresentará a solução e os planos de implementação personalizados para as necessidades do seu condomínio.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </section>
+
       {/* Depoimentos Section */}
       {/* <section className="chegou-section bg-secondary/20">
         <div className="container mx-auto px-4">
@@ -362,11 +411,11 @@ function App() {
                   </p>
                   <Button asChild className="chegou-button w-full text-lg py-6">
                     <a href="https://wa.me/5511941076151?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20ChegouApp!"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Agendar Demonstração
-                      </a>
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Agendar Demonstração
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -388,20 +437,20 @@ function App() {
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="w-5 h-5 chegou-accent" />
                     {/* <span className="chegou-text-secondary">Whatsapp Em Breve</span> */}
-                      <a href="https://wa.me/5511941076151?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20ChegouApp!"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Agendar Demonstração
-                      </a>
+                    <a href="https://wa.me/5511941076151?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20ChegouApp!"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Agendar Demonstração
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={pessoaCelular} 
-                alt="Pessoa usando ChegouApp" 
+              <img
+                src={pessoaCelular}
+                alt="Pessoa usando ChegouApp"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
             </div>
@@ -438,7 +487,7 @@ function App() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Suporte</h4>
               <ul className="space-y-2 chegou-text-secondary">
-                <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda FAQ (Em Breve)</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">(Em Breve)</a></li>
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li> */}
                 {/* <li><a href="#" className="hover:text-primary transition-colors">Status</a></li> */}
               </ul>
