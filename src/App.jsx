@@ -32,7 +32,7 @@ import './App.css'
 // Importar imagens
 import chegouAppLogo from './assets/chegouapp_logo.png'
 import appInterface from './assets/mock2.png'
-import smartLocker from './assets/smart_locker_1.png'
+import smartLocker from './assets/app-img.jpeg'
 import pessoaCelular from './assets/pessoa_celular_1.jpg'
 
 function App() {
@@ -428,7 +428,7 @@ function App() {
                   </div> */}
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 chegou-accent" />
-                    <a href="mailto:comercial@app-chegou.com.br?subject=Solicitação de demonstração&body=Olá, gostaria de agendar uma demonstração do ChegouApp!" className="chegou-text-secondary hover:text-primary transition-colors" > comercial@app-chegou.com.br </a>
+                    <a href="mailto:felipe@app-chegou.com.br?subject=Solicitação de demonstração&body=Olá, gostaria de agendar uma demonstração do ChegouApp!" className="chegou-text-secondary hover:text-primary transition-colors" > felipe@app-chegou.com.br </a>
                   </div>
                   {/* <div className="flex items-center space-x-3">
                     <Globe className="w-5 h-5 chegou-accent" />
