@@ -162,7 +162,7 @@ function App() {
               </div>
               <div className="space-y-6">
                 {[
-                  { step: "1", title: "Registro Digital", desc: "Porteiro registra a encomenda com foto e dados" },
+                  { step: "1", title: "Registro Digital", desc: "Porteiro registra a encomenda" },
                   { step: "2", title: "Notificação Instantânea", desc: "Morador recebe alerta em tempo real" },
                   { step: "3", title: "Retirada Segura", desc: "Confirmação digital na retirada" },
                   { step: "4", title: "Histórico Completo", desc: "Registro permanente de todas as entregas" }
@@ -312,7 +312,7 @@ function App() {
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">Como o ChegouApp funciona para o porteiro?</AccordionTrigger>
               <AccordionContent className="text-lg chegou-text-secondary">
-                O porteiro utiliza o aplicativo para registrar a chegada de encomendas, tirar fotos dos pacotes e do remetente, e notificar o morador instantaneamente. Na retirada, o morador confirma o recebimento digitalmente, garantindo um registro completo e seguro.
+                A portaria ou morador utiliza o aplicativo para registrar a chegada de encomendas e notificar o detinatário/morador instantaneamente. Na retirada, o morador confirma o recebimento digitalmente, garantindo um registro completo e seguro.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
@@ -330,7 +330,7 @@ function App() {
             <AccordionItem value="item-5">
               <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">Como meu condomínio pode adquirir o ChegouApp?</AccordionTrigger>
               <AccordionContent className="text-lg chegou-text-secondary">
-                Para adquirir o ChegouApp, basta entrar em contato conosco através do formulário de demonstração em nosso site, e nossa equipe apresentará a solução e os planos de implementação personalizados para as necessidades do seu condomínio.
+                Para adquirir o ChegouApp, basta entrar em contato conosco através do formulário de demonstração em nosso site, e nossa equipe apresentará a solução e os planos de implementação seu condomínio.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -407,7 +407,7 @@ function App() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-4">Solicite uma Demonstração Gratuita</h3>
                   <p className="chegou-text-secondary mb-6">
-                    Nossa equipe irá apresentar todas as funcionalidades do ChegouApp e como ele pode ser personalizado para as necessidades específicas do seu condomínio.
+                    Nossa equipe irá apresentar todas as funcionalidades do ChegouApp para o seu condomínio.
                   </p>
                   <Button asChild className="chegou-button w-full text-lg py-6">
                     <a href="https://wa.me/5511941076151?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20ChegouApp!"
