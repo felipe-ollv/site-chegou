@@ -7,7 +7,7 @@ import {
   Shield,
   Clock,
   Bell,
-  QrCode,
+  LockKeyhole,
   History,
   BarChart3,
   Users,
@@ -202,7 +202,7 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
               { icon: Bell, title: "Notificações em Tempo Real", desc: "Alertas instantâneos sobre chegada de encomendas" },
-              { icon: QrCode, title: "QR Code para Retirada", desc: "Código único para confirmação segura" },
+              { icon: LockKeyhole, title: "Código para Retirada", desc: "Código único para confirmação segura" },
               { icon: History, title: "Histórico Completo", desc: "Registro de todas as entregas com data e hora" },
               { icon: BarChart3, title: "Relatórios Gerenciais", desc: "Estatísticas para síndicos e administradores" },
               { icon: Smartphone, title: "Interface Intuitiva", desc: "Design pensado para todos os públicos" },
