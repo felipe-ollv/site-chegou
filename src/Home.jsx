@@ -32,7 +32,7 @@ import './App.css'
 // Importar imagens
 import chegouAppLogo from './assets/chegouapp_logo.png'
 import appInterface from './assets/mock2.png'
-import smartLocker from './assets/app-img.jpeg'
+import smartLocker from './assets/chegouapp_site_fluxo_final.png'
 import pessoaCelular from './assets/pessoa_celular_1.jpg'
 
 function Home() {
