@@ -427,7 +427,7 @@ function Home() {
                   </div> */}
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 chegou-accent" />
-                    <a href="mailto:felipe@app-chegou.com.br?subject=Solicitação de demonstração&body=Olá, gostaria de agendar uma demonstração do ChegouApp!" className="chegou-text-secondary hover:text-primary transition-colors" > felipe@app-chegou.com.br </a>
+                    <a href="mailto:felipe@chegou-app.com?subject=Solicitação de demonstração&body=Olá, gostaria de agendar uma demonstração do ChegouApp!" className="chegou-text-secondary hover:text-primary transition-colors" > felipe@chegou-app.com </a>
                   </div>
                   {/* <div className="flex items-center space-x-3">
                     <Globe className="w-5 h-5 chegou-accent" />
