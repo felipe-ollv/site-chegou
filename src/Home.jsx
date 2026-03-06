@@ -501,7 +501,7 @@ function Home() {
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center chegou-text-secondary">
-            <p>&copy; 2025 ChegouApp! Todos os direitos reservados.</p>
+            <p>&copy; 2026 ChegouApp! Todos os direitos reservados.</p>
             <a href="/politica-de-privacidade" className="hover:text-primary transition-colors">
               Política de Privacidade
             </a>
