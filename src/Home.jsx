@@ -32,7 +32,7 @@ import './App.css'
 // Importar imagens
 import chegouAppLogo from './assets/chegouapp_logo.png'
 import appInterface from './assets/mock2.png'
-import smartLocker from './assets/chegouapp_site_fluxo_final.png'
+import smartLocker from './assets/chegouapp_infografico_final_v2.png'
 import pessoaCelular from './assets/porteiro_celular_final.png'
 
 function Home() {
@@ -164,7 +164,7 @@ function Home() {
                   { step: "1", title: "Registro Digital", desc: "Porteiro registra a encomenda" },
                   { step: "2", title: "Notificação Instantânea", desc: "Morador recebe alerta em tempo real" },
                   { step: "3", title: "Retirada Segura", desc: "Confirmação digital na retirada" },
-                  { step: "4", title: "Histórico Completo", desc: "Registro permanente de todas as entregas" }
+                  { step: "4", title: "Histórico Completo", desc: "Registro de todas as entregas" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center font-bold">
