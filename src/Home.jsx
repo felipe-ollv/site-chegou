@@ -43,7 +43,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b/10 border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img src={chegouAppLogo} alt="ChegouApp" className="h-10 w-auto" />
@@ -67,7 +67,7 @@ function Home() {
         </div>
       </header>
 
-      <section id="inicio" className="chegou-section pt-32 pb-20 scroll-mt-24">
+      <section id="inicio" className="chegou-section pt-40 md:pt-32 pb-20 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -104,15 +104,15 @@ function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative">
+            <div>
               <div className="relative z-10">
                 <img
                   src={appInterface}
                   alt="Interface do ChegouApp"
-                  className="w-full h-auto rounded-2xl shadow-2xl"
+                  className="w-full h-auto rounded-2xl"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5  rounded-2xl blur-3xl"></div>
             </div>
           </div>
         </div>
@@ -329,7 +329,7 @@ function Home() {
             <AccordionItem value="item-5">
               <AccordionTrigger className="text-lg font-semibold text-white hover:text-primary">Como meu condomínio pode adquirir o ChegouApp?</AccordionTrigger>
               <AccordionContent className="text-lg chegou-text-secondary">
-                Para adquirir o ChegouApp, basta entrar em contato conosco através do formulário de demonstração em nosso site, e nossa equipe apresentará a solução e os planos de implementação seu condomínio.
+                Para adquirir o ChegouApp, basta entrar em contato conosco, e nossa equipe apresentará a solução e os planos de implementação no seu condomínio.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
