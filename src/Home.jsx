@@ -43,7 +43,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b/10 border-border">
+      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img src={chegouAppLogo} alt="ChegouApp" className="h-10 w-auto" />
