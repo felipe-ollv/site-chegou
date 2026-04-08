@@ -7,7 +7,7 @@ export default function PrivacyPolitic() {
   const navigate = useNavigate()
 
   return (
-    <div className="max-w-3xl mx-auto p-6 text-white leading-relaxed">
+    <div className="max-w-3xl mx-auto p-6 chegou-text-secondary leading-relaxed">
       {/* TERMOS DE USO */}
       <h1 className="text-3xl font-bold mb-4">Termos de Uso</h1>
       <p className="text-sm mb-6">Versão 1.2 – Vigência: 30 de setembro de 2025</p>
